@@ -89,5 +89,8 @@ img{
     body{
         width: 100vw;
     }
+    iframe{
+        max-width: fit-content;
+    }
     
 }
