@@ -92,5 +92,8 @@ img{
     iframe{
         max-width: fit-content;
     }
-    
+    .information{
+        display: flex;
+        flex-direction: column;
+    }
 }
