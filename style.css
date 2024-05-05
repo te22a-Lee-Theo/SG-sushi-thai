@@ -79,8 +79,11 @@ img{
 
 @media screen and (max-width: 640px) {
     .grid{
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
     body{
         width: 100%;
@@ -89,10 +92,24 @@ img{
         display: flex;
         flex-direction: column;
     }
+    #meny-part1{
+        grid-row: 1/2;
+    }
+    #meny-part2{
+        grid-row: 2/3;
+    }
     #meny-part4{
         height: 1000px;
     }
     #map{
         width: 400px;
+    }
+    ol{
+        padding-left: 50px;
+        margin-left: 0;
+        width: fit-content;
+    }
+    li{
+        padding-left: 0;
     }
 }
